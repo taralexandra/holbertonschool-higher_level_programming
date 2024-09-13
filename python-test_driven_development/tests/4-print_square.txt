@@ -1,0 +1,52 @@
+>>> print_square = __import__('4-print_square').print_square
+
+"""
+Test file for the function print_square which should allow to print a square made of symbols #
+"""
+
+tests:
+
+>>> print_square(4)
+####
+####
+####
+####
+
+>>> print_square(12)
+############
+############
+############
+############
+############
+############
+############
+############
+############
+############
+############
+############
+
+>>> print_square(0)
+
+Errors:
+
+
+>>> print_square("4")
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+>>> print_square(-8)
+Traceback (most recent call last):
+    ...
+ValueError: size must be >= 0
+
+>>> print_square(4.2)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+>>> print_square(None)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
