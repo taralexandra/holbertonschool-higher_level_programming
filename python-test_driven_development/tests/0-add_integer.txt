@@ -1,0 +1,39 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+"""
+This is the test file for task 0 of Test Driven Development Project
+Expecting: user enter 2 ints to add using the add integer function.
+"""
+
+Tests:
+
+>>> add_integer(1, 2)
+3
+
+>>> add_integer(100, -2)
+98
+
+>>> add_integer(2)
+100
+
+>>> add_integer(100.3, -2)
+98
+
+>>> add_integer(8, 8)
+16
+
+Tests with errors:
+
+>>> add_integer("4", 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer(4, "2")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>>> add_integer(float('inf'), 3)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
