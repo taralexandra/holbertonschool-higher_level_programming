@@ -28,7 +28,7 @@ def matrix_divided(matrix, div):
 
     for i in range(len(matrix)):
         if i != 0:
-	    if len(matrix[i - 1] != len(matrix[i]):
+            if len(matrix[i - 1]) != len(matrix[i]):
                 raise TypeError("Each row of the matrix must have the same size")
         for j in range(len(matrix[i])):
             if not isinstance(matrix[i][j], (int, float)):
