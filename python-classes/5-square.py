@@ -56,7 +56,7 @@ class Square:
             But, in case size is 0, print an empty line.
         """
         if self.__size == 0:
-            print("--")
+            print("")
         else:
             for height in range(self.__size):
                 for length in range(self.__size):
