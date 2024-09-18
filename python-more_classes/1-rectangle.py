@@ -7,7 +7,7 @@
 """
 
 
-class Rectangle():
+class Rectangle:
 
     """
         This is the class of the rectangle
@@ -24,8 +24,8 @@ class Rectangle():
                 height (int)
         """
 
-    self.width = width
-    self.height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
